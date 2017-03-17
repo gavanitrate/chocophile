@@ -20,30 +20,28 @@ Chocophile is (hopefully) to Chocolatey what Brewfiles are to Homebrew.
     Only need to install some packages temporarily? Not an issue; you can cleanly uninstall a particular environment, whilst leaving all other packages untouched.
 
 ## Usage
-```
-// All Chocophile commands are one-liners
-// Most commands have a shortened alternative (usually one letter)
+```sh
+# All Chocophile commands are one-liners
+# Most commands have a shortened alternative (usually one letter)
 
-// export
+# export
 chocophile e
-// confirm all prompts & export to dev.Chocofile
+# confirm all prompts & export to dev.Chocofile
 chocophile export -y -chocofileName dev
 
-// install
+# install
 chocophile i
 chocophile install -chocofileName dev
 
-// uninstall
+# uninstall
 chocophile uninstall
 chocophile u -chocofileName dev
 
-// add
+# add
 chocophile a sumatrapdf
 chocophile a git,git-lfs
 chocophile add googlechrome,firefox,flashplayerplugin -chocofileName browsers
 
-// remove
+# remove
 chocophile r googlechrome -chocofileName browsers
-
-
 ```
