@@ -31,4 +31,5 @@ Write-Host "Starting build.";
 # Copy source code (to be compiled) into build directory
 Copy-Item $SRC_DIR $BUILD_DIR -recurse
 
+# Build command
 ."$BUILD_DIR\ps2exe.ps1" "$BUILD_SRC_ENTRY" "$("$BUILD_DIR/$ENTRY_POINT" -replace '.ps1','.exe')"
